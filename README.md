@@ -2,14 +2,14 @@
 
 ## Useful Links
 
-[G's bughunter university](https://sites.google.com/site/bughunteruniversity/nonvuln)
-[Bug Bounty Forum](https://bugbountyforum.com/)
-[Cibrary](https://www.cybrary.it/)
-[HackerOne - Resources for new hackers](https://www.hackerone.com/blog/resources-for-new-hackers)
-[HackerOne - Hacker101](https://www.hackerone.com/hacker101)
-[Damn Vulnerable Web Application - DVWA](http://www.dvwa.co.uk/)
-[Hacksplaining - Security training for developers](https://www.hacksplaining.com/)
-[Varonis - Web Security Fundamentals](https://info.varonis.com/web-security-fundamentals)
+[G's bughunter university](https://sites.google.com/site/bughunteruniversity/nonvuln)  
+[Bug Bounty Forum](https://bugbountyforum.com/)  
+[Cibrary](https://www.cybrary.it/)  
+[HackerOne - Resources for new hackers](https://www.hackerone.com/blog/resources-for-new-hackers)  
+[HackerOne - Hacker101](https://www.hackerone.com/hacker101)  
+[Damn Vulnerable Web Application - DVWA](http://www.dvwa.co.uk/)  
+[Hacksplaining - Security training for developers](https://www.hacksplaining.com/)  
+[Varonis - Web Security Fundamentals](https://info.varonis.com/web-security-fundamentals)  
 
 ## Stuff
 
