@@ -10,6 +10,7 @@
 [Damn Vulnerable Web Application - DVWA](http://www.dvwa.co.uk/)  
 [Hacksplaining - Security training for developers](https://www.hacksplaining.com/)  
 [Varonis - Web Security Fundamentals](https://info.varonis.com/web-security-fundamentals)  
+[READ THIS BOOK](https://leanpub.com/web-hacking-101)  
 
 ## Stuff
 
