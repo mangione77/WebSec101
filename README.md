@@ -20,18 +20,18 @@
 1. Enter "password`". If app crashes, it may be vulnerable.
 1. Enter ' or 1=1--' as password. The "--" flag tells SQL to ignore the rest of the statement.
 
-Further explanation: https://www.hacksplaining.com/prevention/sql-injection
-Code samples: https://www.hacksplaining.com/prevention/sql-injection#code-samples
+Further explanation: https://www.hacksplaining.com/prevention/sql-injection  
+Code samples: https://www.hacksplaining.com/prevention/sql-injection#code-samples  
 
 #### NoSQL Injection
 
-[OWASP](https://www.owasp.org/index.php/Testing_for_NoSQL_injection)
-[Blind](https://www.dailysecurity.fr/nosql-injections-classique-blind/)
+[OWASP](https://www.owasp.org/index.php/Testing_for_NoSQL_injection)  
+[Blind](https://www.dailysecurity.fr/nosql-injections-classique-blind/)  
 
 #### React Apps 
 
-[Medium - Exploiting Script Injection Flaws in ReactJS Apps](https://medium.com/dailyjs/exploiting-script-injection-flaws-in-reactjs-883fb1fe36c1)
-[Medium - The Most Common XSS Vulnerability in React.js Applications](https://medium.com/node-security/the-most-common-xss-vulnerability-in-react-js-applications-2bdffbcc1fa0)
+[Medium - Exploiting Script Injection Flaws in ReactJS Apps](https://medium.com/dailyjs/exploiting-script-injection-flaws-in-reactjs-883fb1fe36c1)  
+[Medium - The Most Common XSS Vulnerability in React.js Applications](https://medium.com/node-security/the-most-common-xss-vulnerability-in-react-js-applications-2bdffbcc1fa0)  
 
 > By default, React DOM escapes any values embedded in JSX before rendering them. Thus it ensures that you can never inject anything that’s not explicitly written in your application. Everything is converted to a string before being rendered. This helps prevent XSS (cross-site-scripting) attacks.
 
@@ -113,7 +113,7 @@ If other users keep clicking that link, they will also trigger the action and th
 
 _This can also be triggered in POST requests:_
 
-[OWASP - CRSF](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)):
+[OWASP - CRSF](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)):  
 
 > Applications can be developed to only accept POST requests for the execution of business logic. The misconception is that since the attacker cannot construct a malicious link, a CSRF attack cannot be executed. Unfortunately, this logic is incorrect. There are numerous methods in which an attacker can trick a victim into submitting a forged POST request, such as a simple form hosted in an attacker's Website with hidden values. This form can be triggered automatically by JavaScript or can be triggered by the victim who thinks the form will do something else.
 
@@ -144,8 +144,8 @@ When the user inputs their name and age, the site will secretly submit a from to
 
 #### Directory Traversal
 
-[Hacker Noon - The Power of Directory Traversal](https://hackernoon.com/the-power-of-directory-traversal-93e8dfd608ef)
-[OWASP - Path Traversal](https://www.owasp.org/index.php/Path_Traversal)
+[Hacker Noon - The Power of Directory Traversal](https://hackernoon.com/the-power-of-directory-traversal-93e8dfd608ef)  
+[OWASP - Path Traversal](https://www.owasp.org/index.php/Path_Traversal)  
 
 >A path traversal attack (also known as directory traversal) aims to access files and directories that are stored outside the web root folder. By manipulating variables that reference files with “dot-dot-slash (../)” sequences and its variations or by using absolute file paths, it may be possible to access arbitrary files and directories stored on file system including application source code or configuration and critical system files. It should be noted that access to files is limited by system operational access control (such as in the case of locked or in-use files on the Microsoft Windows operating system).
 This attack is also known as “dot-dot-slash”, “directory traversal”, “directory climbing” and “backtracking”.
