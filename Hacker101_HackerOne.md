@@ -1,4 +1,4 @@
-# Hacker 101 Sessions
+# Hacker 101 Sessions (HackerOne.com)
 
 ## Introduction
 
