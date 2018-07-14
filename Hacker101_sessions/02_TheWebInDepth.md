@@ -1,6 +1,6 @@
 # Hacker101 Sessions
 
-## 02. The Web In Depth
+## [02. The Web In Depth](https://www.hacker101.com/sessions/web_in_depth)  
 
 #### Request Headers
 
