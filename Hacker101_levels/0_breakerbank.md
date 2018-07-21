@@ -9,7 +9,9 @@
 
 [7/14/2018]: Test ASAP with Firefox. 
 
-First XSS payload worked. Moving on to CSRF...
+[7/21/2018]: First XSS payload worked. Moving on to CSRF...
+
+[7/21/2018]: CSRF worked. Pushed PoC
 
 
 

