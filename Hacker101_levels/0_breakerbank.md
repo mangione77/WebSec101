@@ -9,5 +9,9 @@
 
 [7/14/2018]: Test ASAP with Firefox. 
 
+First XSS payload worked. Moving on to CSRF...
+
+
+
 
 
