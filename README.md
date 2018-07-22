@@ -12,6 +12,7 @@
 [Varonis - Web Security Fundamentals](https://info.varonis.com/web-security-fundamentals)  
 [Hacker101.com - Free web class for web security](https://www.hacker101.com)  
 [READ THIS BOOK](https://leanpub.com/web-hacking-101)  
+[Real World XSS Attacks #1: Introduction & Key JavaScript Principles](https://www.perspectiverisk.com/real-world-xss-attacks-1-introduction-key-javascript-principles/)
 
 ## Stuff
 

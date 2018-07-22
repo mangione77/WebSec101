@@ -1,0 +1,10 @@
+In the source code, the following code can be found to check if the user is an admin or not:
+
+			for(var i in cookies) {
+				var cookie = cookies[i].replace(/ /g, '').split('=');
+				if(cookie[0] == 'admin' && cookie[1] == '1')
+					document.write('<a href="/levels/3/admin?page=' + page + '">Edit this page</a>');
+			}
+
+Basically, if a cookie is named 'admin' an the value is set to '1', the user is the admin and is allowed to edit the page.
+So, with a simple extension could be acomplished and the access to the edit page is granted.
