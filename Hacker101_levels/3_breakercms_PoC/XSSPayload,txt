@@ -1,3 +1,7 @@
 In the edit page, the field "Edit Body" accepts link tags as input from the user. It says that script tags are not allowed for security reasons, but the following works:
 
  <a href="javascript:alert(1)">http://google.com</a>
+
+ Also, the following broke so much the page that I can't get into the admin panel by hand anymore :')
+
+ <svg onload="alert(1)">

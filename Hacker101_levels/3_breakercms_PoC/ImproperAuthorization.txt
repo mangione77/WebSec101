@@ -7,4 +7,4 @@ In the source code, the following code can be found to check if the user is an a
 			}
 
 Basically, if a cookie is named 'admin' an the value is set to '1', the user is the admin and is allowed to edit the page.
-So, with a simple extension could be acomplished and the access to the edit page is granted.
+So, with a simple extension this could be acomplished and the access to the edit page is granted.
