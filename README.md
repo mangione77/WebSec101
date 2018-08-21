@@ -1,4 +1,4 @@
-# Web Sec
+# WebSec101 🕸
 
 # Motivation
 
