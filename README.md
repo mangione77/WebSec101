@@ -1,17 +1,22 @@
-# Pentesting
+# Web Sec
+
+# Motivation
+
+This repo contains notes and PoC's I made while following the [Hacker101 sessions](https://www.hacker101.com/) and researching on my own. I figured out it can help someone who's interested in web security but doesn't know where to start. This are __rough__ notes, so take it with a grain of salt. I will continue adding information and correcting posible mistakes on the current notes. If you have suggestions, feel free to get in touch or submit a PR.  
+
+In the folder ```Hacker101_sessions``` you will find theory on the most common web vulnerabilities, while in ```Hacker101_levels``` you will find PoC's on the multiple levels the platform offers to train.
 
 ## Useful Links
 
-[G's bughunter university](https://sites.google.com/site/bughunteruniversity/nonvuln)  
+[Google's bughunter university](https://sites.google.com/site/bughunteruniversity/nonvuln)  
 [Bug Bounty Forum](https://bugbountyforum.com/)  
 [Cibrary](https://www.cybrary.it/)  
 [HackerOne - Resources for new hackers](https://www.hackerone.com/blog/resources-for-new-hackers)  
-[HackerOne - Hacker101](https://www.hackerone.com/hacker101)  
 [Damn Vulnerable Web Application - DVWA](http://www.dvwa.co.uk/)  
 [Hacksplaining - Security training for developers](https://www.hacksplaining.com/)  
 [Varonis - Web Security Fundamentals](https://info.varonis.com/web-security-fundamentals)  
 [Hacker101.com - Free web class for web security](https://www.hacker101.com)  
-[READ THIS BOOK](https://leanpub.com/web-hacking-101)  
+[READ THIS BOOK - Get it free when signing up for a HackerOne account](https://leanpub.com/web-hacking-101)  
 [Real World XSS Attacks #1: Introduction & Key JavaScript Principles](https://www.perspectiverisk.com/real-world-xss-attacks-1-introduction-key-javascript-principles/)
 
 ## Stuff
@@ -19,12 +24,12 @@
 #### Very Basic SQLi
 
 1. App accepts a form for username and password and runs SQL in some form.
-1. Enter "password" as password, obv fails.
-1. Enter "password`". If app crashes, it may be vulnerable.
-1. Enter ' or 1=1--' as password. The "--" flag tells SQL to ignore the rest of the statement.
+1. Enter ```password``` as password, _should_ fail.
+1. Enter ```password` ```. If app crashes, it may be vulnerable.
+1. Enter ```' or 1=1--'``` as password. The "--" flag tells SQL to ignore the rest of the statement.
 
-Further explanation: https://www.hacksplaining.com/prevention/sql-injection  
-Code samples: https://www.hacksplaining.com/prevention/sql-injection#code-samples  
+[Further explanation](https://www.hacksplaining.com/prevention/sql-injection)   
+[Code samples](https://www.hacksplaining.com/prevention/sql-injection#code-samples)   
 
 #### NoSQL Injection
 
